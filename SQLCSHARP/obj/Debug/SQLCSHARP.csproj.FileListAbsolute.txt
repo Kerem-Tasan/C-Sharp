@@ -1,0 +1,7 @@
+C:\Users\KEREM\source\repos\SQLCSHARP\SQLCSHARP\bin\Debug\SQLCSHARP.exe.config
+C:\Users\KEREM\source\repos\SQLCSHARP\SQLCSHARP\bin\Debug\SQLCSHARP.exe
+C:\Users\KEREM\source\repos\SQLCSHARP\SQLCSHARP\bin\Debug\SQLCSHARP.pdb
+C:\Users\KEREM\source\repos\SQLCSHARP\SQLCSHARP\obj\Debug\SQLCSHARP.csproj.AssemblyReference.cache
+C:\Users\KEREM\source\repos\SQLCSHARP\SQLCSHARP\obj\Debug\SQLCSHARP.csproj.CoreCompileInputs.cache
+C:\Users\KEREM\source\repos\SQLCSHARP\SQLCSHARP\obj\Debug\SQLCSHARP.exe
+C:\Users\KEREM\source\repos\SQLCSHARP\SQLCSHARP\obj\Debug\SQLCSHARP.pdb
