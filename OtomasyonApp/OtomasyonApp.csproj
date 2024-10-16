@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72696F47-3D4F-4C2F-AEFE-C7F293CDE58C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtomasyonApp</RootNamespace>
+    <AssemblyName>OtomasyonApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltGroupEkleGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltGroupEkleGuncelle.Designer.cs">
+      <DependentUpon>AltGroupEkleGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardAddUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardAddUpdate.Designer.cs">
+      <DependentUpon>CardAddUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardDBDataSet.cs">
+      <DependentUpon>CardDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CardDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrupEkleGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrupEkleGuncelle.Designer.cs">
+      <DependentUpon>GrupEkleGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapKartları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapKartları.Designer.cs">
+      <DependentUpon>HesapKartları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapKartUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapKartUpdate.Designer.cs">
+      <DependentUpon>HesapKartUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkleGuncellePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkleGuncellePopUp.Designer.cs">
+      <DependentUpon>KullaniciEkleGuncellePopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SehirEkleGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SehirEkleGuncelle.Designer.cs">
+      <DependentUpon>SehirEkleGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipekleGuncellePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipekleGuncellePopUp.Designer.cs">
+      <DependentUpon>TipekleGuncellePopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipUpdate.Designer.cs">
+      <DependentUpon>TipUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurEkleGuncellePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurEkleGuncellePopUp.Designer.cs">
+      <DependentUpon>TurEkleGuncellePopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurGuncelle.Designer.cs">
+      <DependentUpon>TurGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePopUp.Designer.cs">
+      <DependentUpon>UpdatePopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserUpdateForm.Designer.cs">
+      <DependentUpon>UserUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ılcePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ılcePopUp.Designer.cs">
+      <DependentUpon>ılcePopUp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AltGroupEkleGuncelle.resx">
+      <DependentUpon>AltGroupEkleGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardAddUpdate.resx">
+      <DependentUpon>CardAddUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrupEkleGuncelle.resx">
+      <DependentUpon>GrupEkleGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapKartUpdate.resx">
+      <DependentUpon>HesapKartUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkleGuncellePopUp.resx">
+      <DependentUpon>KullaniciEkleGuncellePopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SehirEkleGuncelle.resx">
+      <DependentUpon>SehirEkleGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipekleGuncellePopUp.resx">
+      <DependentUpon>TipekleGuncellePopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipUpdate.resx">
+      <DependentUpon>TipUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurEkleGuncellePopUp.resx">
+      <DependentUpon>TurEkleGuncellePopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurGuncelle.resx">
+      <DependentUpon>TurGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePopUp.resx">
+      <DependentUpon>UpdatePopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUpdateForm.resx">
+      <DependentUpon>UserUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ılcePopUp.resx">
+      <DependentUpon>ılcePopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CardDBDataSet.xsc">
+      <DependentUpon>CardDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CardDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CardDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CardDBDataSet.xss">
+      <DependentUpon>CardDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dataset.xsc">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dataset.xss">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
